@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-const BooksView = () => {
+const BooksView = (props) => {
 		return(
 			<div className="list-books">
             <div className="list-books-title">
@@ -158,7 +159,7 @@ const BooksView = () => {
               </div>
             </div>
             <div className="open-search">
-              <a onClick={() => console.log("Add a book")}>Add a book</a>
+              <Link to='/search' ></Link>
             </div>
           </div>
 		)

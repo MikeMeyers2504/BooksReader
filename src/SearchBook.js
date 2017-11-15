@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class SearchBook extends Component {
 	render() {
@@ -6,7 +7,7 @@ class SearchBook extends Component {
 			<div>
 				<div className="search-books">
             		<div className="search-books-bar">
-              			<a className="close-search" onClick={() => console.log("back from searching")}>Close</a>
+              			<Link className="close-search" to='/'></Link>
               			<div className="search-books-input-wrapper">
                 			{}
                 			<input type="text" placeholder="Search by title or author"/>
