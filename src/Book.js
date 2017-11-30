@@ -18,7 +18,7 @@ const Book = props => {
 							onChange={event =>
 								props.changeShelf(book, event.target.value)}
 						>
-							<option value="title" disabled>Move to...</option>
+							<option value="title">Move to...</option>
 							<option value="currentlyReading">Currently Reading</option>
 							<option value="wantToRead">Want to Read</option>
 							<option value="read">Read</option>
